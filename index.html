@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscribe To Unlock</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#111,#222);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.box{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:20px;
+    width:90%;
+    max-width:400px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+}
+
+.subscribe{
+    background:#ff0000;
+    color:white;
+}
+
+.unlock{
+    background:#00c853;
+    color:white;
+}
+
+#linkBox{
+    display:none;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>🔓 Unlock Link</h1>
+
+<p>
+আমার YouTube Channel Subscribe করে তারপর Link Unlock করুন।
+</p>
+
+<a class="btn subscribe"
+href="https://youtube.com/@himadri_music69?si=zu8Zh-6DspcZ9n22"
+target="_blank">
+📺 Subscribe Channel
+</a>
+
+<br>
+
+<button class="btn unlock" onclick="unlockLink()">
+✅ I Have Subscribed
+</button>
+
+<div id="linkBox">
+<h3>🎉 Link Unlocked!</h3>
+
+<a class="btn unlock"
+href="YOUR-DOWNLOAD-LINK"
+target="_blank">
+🚀 Get Link
+</a>
+
+</div>
+
+</div>
+
+<script>
+function unlockLink(){
+document.getElementById("linkBox").style.display="block";
+}
+</script>
+
+</body>
+</html>
